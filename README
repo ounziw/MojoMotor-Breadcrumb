@@ -1,0 +1,31 @@
+# Breadcrumb
+
+Version: 1.0
+
+Author: [Fumito Mizuno](http://twitter.com/ounziw)
+
+Breadcrumb outputs the breadcrumb for your MojoMotor site.
+
+##Installation
+
+Copy the addon in a folder named 'breadcrumb' in system/mojomotor/third_party
+
+##Usage
+
+Breadcrumb has a function:
+
+    {mojo:breadcrumb:create}
+
+simply returns the breadcrumb.
+
+Optionally, you can set the separator.
+
+    {mojo:breadcrumb:create sep=">"}
+
+returns the breadcrumb, with &gt; between each item.
+
+The string for 'sep' is escaped.
+
+When you do not set 'sep' parameter, it returns the breadcrumb, with &raquo; between each item.
+
+Japanese description is available in http://mojomotor.php-web.net/page/breadcrumb
