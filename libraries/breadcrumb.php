@@ -131,14 +131,17 @@ class Breadcrumb
      * @access public
      * @return void
      */
-    function create_path_array($needle, $haystack = array(), $depth = 1, $patharray = array())
+    function create_path_array($needle, $haystack = array(), $depth = 0, $patharray = array())
     {
 
         foreach ($haystack as $key => $value)
         {
             if ($key == $needle)
             {
+                if ($depth > 0)
+                {
                 $this->page_data = $patharray;
+                }
                 break;
             }
             if (is_array($value)) 
