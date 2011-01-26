@@ -35,7 +35,7 @@ class Breadcrumb
     var $bread;
     var $breaddata;
     var $page_data = array();
-    var $addon_version = '1.0';
+    var $addon_version = '1.1';
 
     /**
      * __construct 
@@ -98,7 +98,7 @@ class Breadcrumb
         {
             $page = $this->addon->page_model->get_page($val);
             array_push($this->bread['contents'], array(
-                "url" => site_url('page/' . $page->url_title),
+                "url" => site_url('' . $page->url_title),
                 "title" => $page->page_title
             ));
         }

@@ -1,6 +1,6 @@
 # Breadcrumb
 
-Version: 1.0
+Version: 1.1
 
 Author: [Fumito Mizuno](http://twitter.com/ounziw)
 
@@ -29,3 +29,7 @@ The string for 'sep' is escaped.
 When you do not set 'sep' parameter, it returns the breadcrumb, with &raquo; between each item.
 
 Japanese description is available in http://mojomotor.php-web.net/page/breadcrumb
+
+## Change Log
+1.1 Modified for MM1.1
+1.0 New Release
